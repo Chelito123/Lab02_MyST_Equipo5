@@ -1,0 +1,97 @@
+{
+  "seed": 42,
+  "tickers": [
+    "AAPL",
+    "MSFT",
+    "JPM",
+    "XOM",
+    "JNJ",
+    "WMT"
+  ],
+  "commission": 0.00125,
+  "initial_cash": 1000000,
+  "split_date": "2024-01-02 00:00:00",
+  "n_windows": 60,
+  "oos_start": "2019-01-02 00:00:00",
+  "oos_end": "2026-09-30 00:00:00",
+  "n_trials_per_study": 100,
+  "wf_minutes": 53.300000000000004,
+  "n_configs_evaluated": 227400,
+  "test_protocol": "theta promedio del walk-forward de train, congelado",
+  "vote_correlation": {
+    "threshold": 0.5,
+    "max_abs_train": 0.346855086289819,
+    "max_abs_test": 0.40870031562765,
+    "chosen_theta_max_window_corr": 0.6046107476478435,
+    "vote_frequency": {
+      "v_adx": 0.4749186783085088,
+      "v_rsi": 0.031672658791302856,
+      "v_obv": 0.6241225817497004,
+      "v_skew": 0.46533127889060094,
+      "v_autocorr": 0.03278548193802431,
+      "v_volz": 0.14252696456086286
+    },
+    "signal_frequency": 0.1184728642355761
+  },
+  "n_studies_regime_fallback": 1424,
+  "n_studies_infeasible": 102,
+  "n_studies_total": 2274,
+  "regime_method": "hmm",
+  "avg_gross_exposure": {
+    "rp": 0.21134898309266026,
+    "naive": 0.2095729859269948,
+    "ew": 0.21065219280149672
+  },
+  "max_gross_exposure_close": {
+    "rp": 0.8550910693457612,
+    "naive": 0.8562061955299103,
+    "ew": 0.8555215877579769
+  },
+  "kruskal_pvalue_by_regime": {
+    "rp": 0.6406681491419458,
+    "naive": 0.42817660529537016,
+    "ew": 0.5131063666617242,
+    "bh": 0.3512440743076444
+  },
+  "rp_exit_reasons": {
+    "stop_loss": 109,
+    "signal": 100,
+    "take_profit": 72
+  },
+  "regime_transitions_oos": 22,
+  "market_impact": {
+    "median_participation": 3.613930643218226e-05,
+    "max_participation": 0.0005258982256503026,
+    "impact_cost_total": 9932.350359681477,
+    "impact_cost_annual_pct_equity": 0.0012931721390370247,
+    "commission_total": 107643.0981587926
+  },
+  "calmar_negative_audit": {
+    "n_studies": 2176,
+    "n_best_calmar_negative": 163,
+    "share_best_calmar_negative": 0.07490808823529412,
+    "all_reproduce": true,
+    "mean_mdd_percentile_of_best_among_losers": 0.287522461361645,
+    "mean_corr_calmar_mdd_among_losers": -0.15750301233814398,
+    "n_picked_least_loss": 99,
+    "n_picked_bigger_loss": 64,
+    "share_of_all_studies_affected": 0.029411764705882353,
+    "median_extra_loss_when_affected": 0.0144174064976344,
+    "median_extra_mdd_when_affected": 0.02420715344766572
+  },
+  "breakeven_commission": {
+    "ew": 0.0021521712414049824,
+    "naive": 0.002061281043993825,
+    "rp": 0.002333948296273145
+  },
+  "degradation": {
+    "train": {
+      "median_is_calmar": 5.9663371613059475,
+      "median_oos_calmar": 0.0,
+      "mean_is_annual_return": 0.1744478997854228,
+      "mean_oos_annual_return": 0.0280976794662501
+    }
+  },
+  "wf_minutes_note": "minutos de cómputo; 2 de 8 bloques se alargaron por suspensión de la máquina y se estimaron con la mediana de los bloques completos",
+  "total_minutes_wall": 620.3438421686491
+}

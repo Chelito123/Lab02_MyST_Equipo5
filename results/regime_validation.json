@@ -1,0 +1,268 @@
+{
+  "selected_method": "hmm",
+  "selection_rule": "max Calmar del portafolio RP en train (2019-2023)",
+  "train_calmar_by_method": {
+    "rules": -0.13668028794739415,
+    "kmeans": -0.1512459672484954,
+    "hmm": -0.0974535335968604
+  },
+  "methods": {
+    "rules": {
+      "train_fit": {
+        "silhouette": 0.2945036134722964,
+        "avg_duration_days": 13.37962962962963,
+        "transitions_per_year": 18.660207612456748,
+        "share_trend": 0.4539792387543253,
+        "share_mean_reversion": 0.44567474048442907,
+        "share_crisis": 0.10034602076124567
+      },
+      "causal_raw": {
+        "avg_duration_days": 15.053030303030303,
+        "avg_duration_by_regime": {
+          "crisis": 21.625,
+          "mean_reversion": 12.265625,
+          "trend": 17.15
+        },
+        "n_transitions": 131,
+        "transitions_per_year": 16.61399094111726,
+        "share_train": {
+          "mean_reversion": 0.48228043143297383,
+          "trend": 0.4306625577812018,
+          "crisis": 0.08705701078582434
+        },
+        "share_test": {
+          "trend": 0.6821480406386067,
+          "mean_reversion": 0.23076923076923078,
+          "crisis": 0.08708272859216255
+        },
+        "transition_matrix": {
+          "crisis": {
+            "crisis": 0.9538,
+            "mean_reversion": 0.0076,
+            "trend": 0.0019
+          },
+          "mean_reversion": {
+            "crisis": 0.0347,
+            "mean_reversion": 0.9185,
+            "trend": 0.0554
+          },
+          "trend": {
+            "crisis": 0.0116,
+            "mean_reversion": 0.0739,
+            "trend": 0.9426
+          }
+        }
+      },
+      "causal_operated": {
+        "avg_duration_days": 34.258620689655174,
+        "avg_duration_by_regime": {
+          "crisis": 34.6,
+          "mean_reversion": 29.666666666666668,
+          "trend": 38.96153846153846
+        },
+        "n_transitions": 57,
+        "transitions_per_year": 7.228988424760946,
+        "share_train": {
+          "mean_reversion": 0.4953775038520801,
+          "trend": 0.41756548536209553,
+          "crisis": 0.08705701078582434
+        },
+        "share_test": {
+          "trend": 0.683599419448476,
+          "mean_reversion": 0.22931785195936139,
+          "crisis": 0.08708272859216255
+        },
+        "transition_matrix": {
+          "crisis": {
+            "crisis": 0.9711,
+            "mean_reversion": 0.0037,
+            "trend": 0.002
+          },
+          "mean_reversion": {
+            "crisis": 0.0173,
+            "mean_reversion": 0.9663,
+            "trend": 0.0227
+          },
+          "trend": {
+            "crisis": 0.0116,
+            "mean_reversion": 0.03,
+            "trend": 0.9753
+          }
+        }
+      }
+    },
+    "kmeans": {
+      "train_fit": {
+        "silhouette": 0.3753515623720826,
+        "avg_duration_days": 14.595959595959595,
+        "transitions_per_year": 17.090657439446368,
+        "share_trend": 0.31833910034602075,
+        "share_mean_reversion": 0.6311418685121107,
+        "share_crisis": 0.05051903114186851
+      },
+      "causal_raw": {
+        "avg_duration_days": 12.737179487179487,
+        "avg_duration_by_regime": {
+          "crisis": 11.8,
+          "mean_reversion": 15.95774647887324,
+          "trend": 9.67142857142857
+        },
+        "n_transitions": 155,
+        "transitions_per_year": 19.65777554101661,
+        "share_train": {
+          "mean_reversion": 0.6325115562403698,
+          "trend": 0.23112480739599384,
+          "crisis": 0.13636363636363635
+        },
+        "share_test": {
+          "trend": 0.5471698113207547,
+          "mean_reversion": 0.4528301886792453
+        },
+        "transition_matrix": {
+          "crisis": {
+            "crisis": 0.9153,
+            "mean_reversion": 0.0062,
+            "trend": 0.0118
+          },
+          "mean_reversion": {
+            "crisis": 0.0508,
+            "mean_reversion": 0.9373,
+            "trend": 0.0902
+          },
+          "trend": {
+            "crisis": 0.0339,
+            "mean_reversion": 0.0565,
+            "trend": 0.8979
+          }
+        }
+      },
+      "causal_operated": {
+        "avg_duration_days": 34.258620689655174,
+        "avg_duration_by_regime": {
+          "crisis": 30.333333333333332,
+          "mean_reversion": 44.34615384615385,
+          "trend": 25.076923076923077
+        },
+        "n_transitions": 57,
+        "transitions_per_year": 7.228988424760946,
+        "share_train": {
+          "mean_reversion": 0.6479198767334361,
+          "trend": 0.211864406779661,
+          "crisis": 0.14021571648690292
+        },
+        "share_test": {
+          "trend": 0.5471698113207547,
+          "mean_reversion": 0.4528301886792453
+        },
+        "transition_matrix": {
+          "crisis": {
+            "crisis": 0.967,
+            "mean_reversion": 0.0017,
+            "trend": 0.0061
+          },
+          "mean_reversion": {
+            "crisis": 0.022,
+            "mean_reversion": 0.9775,
+            "trend": 0.0323
+          },
+          "trend": {
+            "crisis": 0.011,
+            "mean_reversion": 0.0208,
+            "trend": 0.9616
+          }
+        }
+      }
+    },
+    "hmm": {
+      "train_fit": {
+        "silhouette": 0.2533688891820314,
+        "avg_duration_days": 120.41666666666667,
+        "transitions_per_year": 1.9183391003460208,
+        "share_trend": 0.524567474048443,
+        "share_mean_reversion": 0.41730103806228375,
+        "share_crisis": 0.05813148788927336,
+        "expected_duration_days": {
+          "trend": 189.234065028171,
+          "crisis": 82.43084458706282,
+          "mean_reversion": 100.51041661167055
+        },
+        "viterbi_disagreement": 0.01660899653979239
+      },
+      "causal_raw": {
+        "avg_duration_days": 70.96428571428571,
+        "avg_duration_by_regime": {
+          "crisis": 37.55555555555556,
+          "mean_reversion": 47.583333333333336,
+          "trend": 154.0
+        },
+        "n_transitions": 27,
+        "transitions_per_year": 3.4242576748867637,
+        "share_train": {
+          "mean_reversion": 0.3913713405238829,
+          "trend": 0.3713405238828968,
+          "crisis": 0.23728813559322035
+        },
+        "share_test": {
+          "trend": 0.865021770682148,
+          "mean_reversion": 0.09143686502177069,
+          "crisis": 0.04354136429608128
+        },
+        "transition_matrix": {
+          "crisis": {
+            "crisis": 0.9763,
+            "mean_reversion": 0.0123,
+            "trend": 0.0019
+          },
+          "mean_reversion": {
+            "crisis": 0.0178,
+            "mean_reversion": 0.979,
+            "trend": 0.0046
+          },
+          "trend": {
+            "crisis": 0.0059,
+            "mean_reversion": 0.0088,
+            "trend": 0.9935
+          }
+        }
+      },
+      "causal_operated": {
+        "avg_duration_days": 82.79166666666667,
+        "avg_duration_by_regime": {
+          "crisis": 41.875,
+          "mean_reversion": 57.5,
+          "trend": 179.5
+        },
+        "n_transitions": 23,
+        "transitions_per_year": 2.916960241570206,
+        "share_train": {
+          "mean_reversion": 0.39445300462249616,
+          "trend": 0.36902927580893685,
+          "crisis": 0.23651771956856701
+        },
+        "share_test": {
+          "trend": 0.8679245283018868,
+          "mean_reversion": 0.09143686502177069,
+          "crisis": 0.040638606676342524
+        },
+        "transition_matrix": {
+          "crisis": {
+            "crisis": 0.979,
+            "mean_reversion": 0.0104,
+            "trend": 0.0019
+          },
+          "mean_reversion": {
+            "crisis": 0.015,
+            "mean_reversion": 0.9826,
+            "trend": 0.0037
+          },
+          "trend": {
+            "crisis": 0.006,
+            "mean_reversion": 0.007,
+            "trend": 0.9944
+          }
+        }
+      }
+    }
+  },
+  "hmm_train_viterbi_disagreement": 0.01660899653979239
+}
