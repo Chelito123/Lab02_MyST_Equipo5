@@ -109,4 +109,17 @@ Se usó Claude (Anthropic) como asistente de programación para: estructurar el 
 escribir la primera versión de los módulos de `src/` y de las pruebas, generar las figuras y el
 reporte. Las decisiones de diseño (indicadores, regla de confirmación, zona de tolerancia del RSI,
 reglas por régimen, estimador de covarianza, protocolo de prueba) se discutieron y aprobaron por el
-equipo. _(Completar con el detalle de qué revisó y modificó cada integrante.)_
+equipo.
+
+Cada integrante revisó, corrió y validó el código de su parte, y es responsable de poder explicarlo:
+
+- **Adrián Marcelo Ballesteros Herrera** — `src/data.py`, `src/backtest.py`, `src/metrics.py` y
+  `tests/test_backtest.py`: descarga y auditoría de datos, contabilidad del motor (efectivo +
+  posiciones), convención de stop-loss primero, regla de no apalancamiento y métricas de desempeño.
+- **Erik del Castillo Román** — `src/signals.py`, `src/optimize.py`, `tests/test_signals.py` y
+  `main.py`: indicadores, regla de confirmación 3 de 6, zona de tolerancia del RSI, espacio de
+  parámetros, walk-forward con Optuna y θ promedio congelado.
+- **Jesús Emmanuel Flores Cortés** — `src/regimes.py`, `src/portfolio.py`, `src/plots.py`,
+  `tests/test_regimes.py`, `tests/test_portfolio.py`, `notebooks/analysis.ipynb` y `docs/`:
+  clasificadores de régimen (reglas, K-means y HMM filtrado), Risk Parity, agregación de señales,
+  figuras, reporte y presentación.
